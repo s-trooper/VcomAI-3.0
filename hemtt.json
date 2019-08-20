@@ -1,0 +1,9 @@
+{
+  "name": "Vcom AI",
+  "prefix": "vcomai",
+  "author": "genesis92x",
+  "files": [
+    "mod.cpp"
+  ],
+  "sigversion": 3
+}

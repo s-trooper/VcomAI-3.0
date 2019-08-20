@@ -4,18 +4,31 @@ class VCOM
 	
 	class FSM
 	{
-		file = "Vcom\FSMS";
+		file = "FSMS";
 		
 		// group spawn VCM_fnc_SQUADBEH
 		class SQUADBEH 
 		{
 			ext = ".fsm";
 		};
+		
+		// [] spawn VCM_fnc_AIDRIVEBEHAVIOR
+		class AIDRIVEBEHAVIOR
+		{
+			ext = ".fsm";
+		};		
+		
+		// [] spawn VCM_fnc_PLAYERSQUAD
+		class PLAYERSQUAD
+		{
+			ext = ".fsm";
+		};		
+		
 	};
 	
 	class Functions 
 	{
-		file = "Vcom\Functions\VCM_Functions";
+		file = "functions";
 		
 		// [unitToRearm, rearmLocation] spawn VCM_fnc_ActRearm
 		class ActRearm {};
@@ -151,6 +164,31 @@ class VCOM
 
 		//[] call VCM_fnc_CBASettings;
 		class CBASettings {};
+		
+		//[] call VCM_fnc_SniperList
+		class SniperList {};
+		
+		//[] spawn VCM_fnc_SniperEngage;
+		class SniperEngage;
+		
+		//[] spawn VCM_fnc_RangeEngage;
+		class RangeEngage;
+
+		//[] call VCM_fnc_ClstKnwnEnmy;
+		class ClstKnwnEnmy;
+
+		// unit call VCM_fnc_IsDriver;
+		class IsDriver {};			
+
+		//unit call VCM_fnc_VehicleDetection;
+		class VehicleDetection {};
+		
+		//[unit,4] call VCM_fnc_MovePrediction;
+		class MovePrediction {};
+		
+		//[] call VCM_fnc_UpdateDrivers;
+		class UpdateDrivers {};
+		
 	};		
 
 };

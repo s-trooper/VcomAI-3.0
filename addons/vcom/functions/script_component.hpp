@@ -1,0 +1,1 @@
+#include "\z\vcomai\addons\vcom\script_component.hpp"
